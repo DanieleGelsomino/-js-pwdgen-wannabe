@@ -2,25 +2,30 @@
 console.log('JS OK!');
 
 //prima richiesta nome
-const Nome = prompt('qual\'è il tuo nome?');
-console.log('il tuo nome è ' + Nome);
+const FirstName = prompt('qual\'è il tuo nome?');
+console.log('il tuo nome è ' + FirstName);
 
-// accedo all'elemento con id Nome
-document.getElementById('Nome').innerText = 'il tuo nome è: ' + Nome;
+// // accedo all'elemento con id FirstName
+// document.getElementById('FirstName').innerText = 'il tuo nome è: ' + FirstName;
 
 //seconda richiesta cognome
-const Cognome = prompt('qual\'è il tuo cognome?')
-console.log('il tuo cognome è ' + Cognome);
+const Surname = prompt('qual\'è il tuo cognome?')
+console.log('il tuo cognome è ' + Surname);
 
-// accedo all'elemento con id Cognome
-document.getElementById('Cognome').innerText = 'il tuo cognome è: ' + Cognome;
+// // accedo all'elemento con id Surname
+// document.getElementById('Surname').innerText = 'il tuo cognome è: ' + Surname;
 
 //terza richiesta colore preferito
-const ColorePreferito = prompt('qual\'è il tuo colore preferito?')
-console.log('il tuo colore preferito è ' + ColorePreferito);
+const FavoriteColor = prompt('qual\'è il tuo colore preferito?')
+console.log('il tuo colore preferito è ' + FavoriteColor);
 
-// accedo all'elemento con id ColorePreferito
-document.getElementById('ColorePreferito').innerText = 'il tuo cognome è: ' + ColorePreferito;
+// // accedo all'elemento con id FavoriteColor
+// document.getElementById('FavoriteColor').innerText = 'il tuo cognome è: ' + FavoriteColor;
 
+//PdwGenerate
+const UsefulInfo = FirstName + Surname + FavoriteColor + '21';
+console.log(UsefulInfo);
 
+// accedo all'elemento con id PdwGenerate
+document.getElementById('PdwGenerate').innerText = UsefulInfo;
 
